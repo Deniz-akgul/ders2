@@ -1,0 +1,10 @@
+import random
+characters="+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+while True:
+    sifre_uzunluğu=int(input("Şifreniz kaç karakter olacak?"))
+    sifre=""
+
+    for i in range(sifre_uzunluğu):
+        sifre+= random.choice(characters)
+
+    print(sifre)
